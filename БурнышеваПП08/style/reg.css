@@ -1,0 +1,393 @@
+:root {
+    --main: #f4f4f4;
+    --text-v: #333;
+    --header: #C41E24;
+    --text-in: white;
+    --footer: #2e2e2e;
+    --info: #ffffff;
+    --title: #222;
+    --desc: #777;
+    --ppp: #555;
+    --border: #eee;
+    --price: #C41E24;
+    --thead: #d0d0d0;
+    --focus: #C41E24;
+
+}
+
+.reg-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--info);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.reg-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-v);
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--header);
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.reg-subtitle {
+    font-size: 16px;
+    color: #777777;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.reg-form .form-group {
+    margin-bottom: 20px;
+}
+
+.reg-form .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: var(--text-v);
+    font-size: 14px;
+}
+
+.reg-form .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.reg-form .form-group input:focus {
+    outline: none;
+    border-color: var(--header);
+}
+
+.form-hint {
+    display: block;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+    color: var(--ppp);
+    line-height: 1.4;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.checkbox-group a {
+    color: var(--focus);
+    text-decoration: none;
+}
+
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+.reg-submit-button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--header);
+    color: var(--text-in);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reg-submit-button:hover {
+    background-color: #a0181d;
+}
+
+.reg-login-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+    color: var(--ppp);
+}
+
+.reg-login-link a {
+    color: var(--focus);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.reg-login-link a:hover {
+    text-decoration: underline;
+}
+/*Админка*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* контейнер формы админки*/
+.admin-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* карточки формы  */
+.admin-form-card {
+    background: var(--info);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.admin-title {
+    text-align: center;
+    color: var(--header);
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* подписи к полю формы */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--title);
+    font-size: 14px;
+}
+
+/*выбора категории */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/*  кнопки сохранения товара*/
+.admin-save-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--header);
+    color: var(--text-in);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+/*Адаптивка*/
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .main-navigation {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .search-container input[type="search"] {
+        width: 300px;
+    }
+
+    .register-card {
+        padding: 25px;
+    }
+
+    .register-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-navigation {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-container input[type="search"] {
+        width: 70%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .register-card {
+        padding: 20px;
+    }
+
+    .register-title {
+        font-size: 24px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .admin-container {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .admin-form-card {
+        padding: 25px;
+    }
+
+    .admin-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    .admin-save-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-color: var(--main);
+    }
+
+    .admin-container {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .admin-form-card {
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .admin-title {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
+    .admin-save-btn {
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
+}
+
+/* Очень маленькие экраны  */
+@media (max-width: 480px) {
+    .admin-container {
+        margin: 15px auto;
+        padding: 0 12px;
+    }
+
+    .admin-form-card {
+        padding: 15px;
+    }
+
+    .admin-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .admin-save-btn {
+        padding: 10px;
+        font-size: 13px;
+    }
+}

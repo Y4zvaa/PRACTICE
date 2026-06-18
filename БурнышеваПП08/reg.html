@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрации</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <a href="index.html">О компании</a>
+                <a href="catalog.html" class="active">Каталог</a>
+                <a href="#">Партнёрам</a>
+                <a href="#">Вакансии</a>
+                <a href="admin.html">Связаться</a>
+                <a href="profile.html">Профиль</a>
+            </nav>
+            <div class="header-phone">
+            </div>
+        </div>
+    </header>
+    <main class="register-main">
+        <div class="reg-container">
+            <h1 class="reg-title">Создание аккаунта</h1>
+            <p class="reg-subtitle">Заполните форму для регистрации</p>
+
+            <div class="form-group">
+                <label for="lastname">ФИО *</label>
+                <input type="text" id="lastname" placeholder="Иванов Иван Иванович" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон *</label>
+                <input type="tel" id="phone" placeholder="Формат: +7(XXX)-XXX-XX-XX" required>
+            </div>
+            <form class="reg-form">
+                <div class="form-group">
+                    <label for="email">Электронная почта *</label>
+                    <input type="email" id="email" placeholder="example@mail.ru" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль *</label>
+                    <input type="password" id="password" placeholder="Придумайте пароль">
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="agreement" required>
+                    <label for="agreement">Я соглашаюсь на обработку персональных данных в соответствии с <a
+                            href="#">Политикой конфиденциальности</a></label>
+                </div>
+
+                <button type="submit" class="reg-submit-button"> Зарегистрироваться</button>
+            </form>
+
+            <p class="reg-login-link">Eсть аккаунт? <a href="auth.html">Войдите</a></p>
+        </div>
+
+
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

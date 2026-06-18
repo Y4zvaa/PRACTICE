@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <a href="catalog.html">Каталог</a>
+                <a href="cart.html" class="active">Заявка</a>
+            </nav>
+            <div class="header-phone">
+                <a href="tel:+73902281402">+7 (3913) 22-26-92</a>
+            </div>
+        </div>
+    </header>
+    <main class="cart-container">
+        <h1 class="cart-header-title">Формирование заявки</h1>
+        <div id="cart-list-container"></div>
+        <div class="cart-summary" id="cart-summary-section">
+            <div class="total-price">Итого: <span id="total-amount-display">0 ₽</span></div>
+            <button id="submit-request-button" class="submit-request-button">Отправить заявку</button>
+        </div>
+        <div id="empty-cart-message" class="empty-cart-message">
+            <h2>Ваша заявка пуста</h2>
+            <p>Перейдите в каталог, чтобы выбрать продукцию.</p>
+            <a href="catalog.html" class="back-to-catalog-button">Вернуться в каталог</a>
+        </div>
+    </main>
+    <div id="order-form-modal" class="modal-window">
+        <div class="modal-content">
+            <span class="close-modal-button"></span>
+            <h2>Оформление заявки</h2>
+            <form id="order-submission-form">
+                <div class="form-group">
+                    <label for="full-name-input">ФИО представителя *</label>
+                    <input type="text" id="full-name-input" placeholder="Иванов Иван Иванович">
+                </div>
+                <div class="form-group">
+                    <label for="phone-number-input">Контактный телефон *</label>
+                    <input type="tel" id="phone-number-input" placeholder="+7 (999) 123-45-67">
+                </div>
+                <div class="form-group">
+                    <label for="email-address-input">Электронная почта для связи *</label>
+                    <input type="email" id="email-address-input" placeholder="example@mail.ru">
+                </div>
+                <button type="submit" class="submit-form-button">Отправить заявку</button>
+                Поля, отмеченные * , обязательны к заполнению
+            </form>
+        </div>
+    </div>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
