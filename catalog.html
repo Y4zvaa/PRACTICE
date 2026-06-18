@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог продукции | Мясокомбинат Абаканский</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Логотип Мясокомбинат Абаканский">
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <a href="index.html">О компании</a>
+                <a href="catalog.html" class="active">Каталог</a>
+                <a href="#">Партнёрам</a>
+                <a href="#">Вакансии</a>
+                <a href="admin.html">Связаться</a>
+                <a href="profile.html">Профиль</a>
+            </nav>
+            <div class="header-phone">
+                <a href="cart.html" class="request-link">
+                    Заявка <span id="request-counter">0</span>
+                </a>
+                <a href="reg.html" class="active">Зарегистрироваться</a>
+                <a href="auth.html" class="active">Войти</a>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="filters-sidebar">
+            <div class="sidebar-section">
+                Каталог продукции
+                <nav class="category-navigation">
+                    <ul>
+                        <li><a href="#" class="active" data-category="all">Вся продукция</a></li>
+                        <li><a href="#" data-category="conserves">Мясные консервы</a></li>
+                        <li><a href="#" data-category="sausages">Колбасные изделия</a></li>
+                        <li><a href="#" data-category="semi">Полуфабрикаты</a></li>
+                        <li><a href="#" data-category="delicacies">Деликатесы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar-section">
+                Фильтры
+                <div class="filter-group">
+                    <input type="checkbox" id="in-stock-checkbox">
+                    <span>В наличии</span>
+                </div>
+                <p class="filter-title">Цена (руб.)</p>
+                <div class="filter-group-prise">
+                    <div class="price-range">
+                        <input type="number" id="price-min-input" placeholder="От" value="50">
+                        <span>-</span>
+                        <input type="number" id="price-max-input" placeholder="До" value="5000">
+                    </div>
+                    <button class="apply-filter-button" id="apply-filter-button">Применить</button>
+                </div>
+            </div>
+        </aside>
+        <main class="products-grid">
+            <article class="product-card" data-id="1" data-category="conserves" data-price="180" data-instock="true">
+                <div class="product-image-container">
+                    <img src="images/2.png" alt="Тушенка Говяжья">
+                </div>
+                <div class="product-information">
+                    <h3 class="product-name">Тушенка Говяжья</h3>
+                    <p class="product-description">Нежный вкус, без сои и ГМО.</p>
+                    <div class="price-information">
+                        <span class="price">180 ₽</span>
+                        <span class="unit">/ шт.</span>
+                    </div>
+                    <button class="add-to-request-button">В заявку</button>
+                </div>
+            </article>
+            <article class="product-card" data-id="2" data-category="sausages" data-price="320" data-instock="true">
+                <div class="product-image-container">
+                    <img src="images/3.png" alt="Колбаса Докторская">
+                </div>
+                <div class="product-information">
+                    <h3 class="product-name">Колбаса «Докторская»</h3>
+                    <p class="product-description">Родной состав, без добавок</p>
+                    <div class="price-information">
+                        <span class="price">320 ₽</span>
+                        <span class="unit">/ кг</span>
+                    </div>
+                    <button class="add-to-request-button">В заявку</button>
+                </div>
+            </article>
+            <article class="product-card" data-id="3" data-category="conserves" data-price="85" data-instock="true">
+                <div class="product-image-container">
+                    <img src="images/4.png" alt="Паштет Нежный">
+                </div>
+                <div class="product-information">
+                    <h3 class="product-name">Паштет Нежный (140г)</h3>
+                    <p class="product-description">Нежный вкус, без сои и ГМО.</p>
+                    <div class="price-information">
+                        <span class="price">85 ₽</span>
+                        <span class="unit">/ шт.</span>
+                    </div>
+                    <button class="add-to-request-button">В заявку</button>
+                </div>
+            </article>
+            <article class="product-card" data-id="4" data-category="sausages" data-price="250" data-instock="true">
+                <div class="product-image-container">
+                    <img src="images/5.png" alt="Сосиски С молочком">
+                </div>
+                <div class="product-information">
+                    <h3 class="product-name">Сосиски «С молочком»</h3>
+                    <p class="product-description">Натуральный продукт без ГМО</p>
+                    <div class="price-information">
+                        <span class="price">250 ₽</span>
+                        <span class="unit">/ уп.</span>
+                    </div>
+                    <button class="add-to-request-button">В заявку</button>
+                </div>
+            </article>
+            <article class="product-card" data-id="5" data-category="delicacies" data-price="450" data-instock="true">
+                <div class="product-image-container">
+                    <img src="images/6.png" alt="Ветчина Абаканская">
+                </div>
+                <div class="product-information">
+                    <h3 class="product-name">Ветчина Абаканская</h3>
+                    <p class="product-description">Нежный вкус, без сои и ГМО..</p>
+                    <div class="price-information">
+                        <span class="price">450 ₽</span>
+                        <span class="unit">/ кг</span>
+                    </div>
+                    <button class="add-to-request-button">В заявку</button>
+                </div>
+            </article>
+        </main>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип Мясокомбинат Абаканский">
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">О компании</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="#">Партнёрам</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="admin.html">Связаться</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <p>+7 3913 22-26-92</p>
+                    <p>example@mail.ru</p>
+                    <p>г. Абакан ул. Пушкина 196А</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

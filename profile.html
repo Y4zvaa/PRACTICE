@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мясокомбинат Абаканский</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <a href="index.html">О компании</a>
+                <a href="catalog.html" class="active">Каталог</a>
+                <a href="#">Партнёрам</a>
+                <a href="#">Вакансии</a>
+                <a href="admin.html">Связаться</a>
+                <a href="profile.html">Профиль</a>
+            </nav>
+            <div class="header-phone">
+                <a href="cart.html" class="request-link">
+                    Заявка <span id="request-counter">0</span>
+                </a>
+                <a href="reg.html" class="active">Зарегистрироваться</a>
+                <a href="auth.html" class="active">Войти</a>
+            </div>
+        </div>
+    </header>
+    <main class="profile-main">
+        <div class="profile-container">
+            <div class="profile-grid">
+                <!-- Блок информации о пользователе -->
+                <div class="profile-card">
+                    <h2 class="card-title">Информация о пользователе</h2>
+                    <div class="profile-info">
+                        <div class="info-row">
+                            <span class="info-label">E-mail:</span>
+                            <span class="info-value">example@mail.ru</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">ФИО:</span>
+                            <span class="info-value">Иванов Иван Иванович</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Номер телефона:</span>
+                            <span class="info-value">+7(912)-345-67-67</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card history-card">
+                    <div class="history-header">
+                        <h2 class="card-title">История заявок</h2>
+                    </div>
+                    <div class="history-table-wrapper">
+                        <table class="history-table">
+                            <thead>
+                                <tr>
+                                    <th>Дата заявки</th>
+                                    <th>Номер заявки</th>
+                                    <th>Общая сумма</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15.03.2026</td>
+                                    <td>20266767</td>
+                                    <td class="price-cell">1 499 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>02.03.2026</td>
+                                    <td>11092025</td>
+                                    <td class="price-cell">2 499 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td>20.02.2026</td>
+                                    <td>10104488</td>
+                                    <td class="price-cell">1 167 ₽</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Настройка темы интерфейса -->
+                <div class="profile-card">
+                    <div class="setttingList">
+                        <div class="settingsList_Item" data-theme="light">
+                            <img src="images/light.png" alt="light">
+                            <div>Светлая тема интерфейса</div>
+                        </div>
+                        <div class="settingsList_Item" data-theme="dark">
+                            <img src="images/dark.png" alt="dark">
+                            <div>Темная тема интерфейса</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип">
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">О компании</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="#">Партнёрам</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="admin.html">Связаться</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <p>+7 3913 22-26-92</p>
+                    <p>example@mail.ru</p>
+                    <p>г. Абакан ул. Пушкина 196А</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
