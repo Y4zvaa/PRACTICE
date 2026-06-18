@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="style/reg.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png">
+                    <img src="images/logo.png" alt="Логотип">
                 </a>
             </div>
             <nav class="main-navigation">
@@ -36,15 +37,15 @@
 
             <form class="reg-form">
                 <div class="form-group">
-                    <label for="email">E-mail *</label>
-                    <input type="email" id="email" placeholder="Введите действующий e-mail" required>
+                    <label for="auth-email">E-mail *</label>
+                    <input type="email" id="auth-email" placeholder="Введите действующий e-mail" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="password">Пароль *</label>
-                    <input type="password" id="password" placeholder="Введите пароль" required>
+                    <label for="auth-password">Пароль *</label>
+                    <input type="password" id="auth-password" placeholder="Введите пароль" required>
                 </div>
-                <button type="submit" class="reg-submit-button"> Войти</button>
+                <button type="submit" class="reg-submit-button">Войти</button>
             </form>
 
             <p class="reg-login-link">Нет аккаунта? <a href="reg.html">Зарегистрироваться</a></p>
@@ -52,9 +53,7 @@
                 Забыли пароль? <a href="#">Восстановить</a>
             </div>
         </div>
-
     </main>
-
     <script src="scripts/script.js"></script>
 </body>
 

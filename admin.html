@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +9,44 @@
     <link rel="stylesheet" href="style/reg.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="main-header">
         <div class="header-container">
-        </div>
-        <nav class="main-navigation">
-            <a href="catalog.html">Каталог</a>
-        </nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Логотип">
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <a href="catalog.html">Каталог</a>
+            </nav>
         </div>
     </header>
     <main class="admin-container">
         <div class="admin-form-card">
-            <h2 class="admin-title">Добавить новый товар</h2>
+            <h1 class="admin-title">Добавить новый товар</h1>
             <form id="add-product-form">
                 <div class="form-group">
-                    <for="product-name">Название товара
-                        <input type="text" id="product-name" placeholder="Например: Тушенка Свиная" required>
+                    <label for="product-name">Название товара</label>
+                    <input type="text" id="product-name" placeholder="Например: Тушенка Свиная" required>
                 </div>
                 <div class="form-group">
-                    <for="product-price">Цена (руб.)
-                        <input type="number" id="product-price" placeholder="150" required>
+                    <label for="product-price">Цена (руб.)</label>
+                    <input type="number" id="product-price" placeholder="150" required>
                 </div>
                 <div class="form-group">
-                    <for="product-category">Категория
-                        <select id="product-category" required>
-                            <option value="conserves">Мясные консервы</option>
-                            <option value="sausages">Колбасные изделия</option>
-                            <option value="semi">Полуфабрикаты</option>
-                            <option value="delicacies">Деликатесы</option>
-                        </select>
+                    <label for="product-category">Категория</label>
+                    <select id="product-category" required>
+                        <option value="conserves">Мясные консервы</option>
+                        <option value="sausages">Колбасные изделия</option>
+                        <option value="semi">Полуфабрикаты</option>
+                        <option value="delicacies">Деликатесы</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <for="product-image">Имя файла картинки (из папки images/)
-                        <input type="text" id="product-image" placeholder="Например: 7.png">
+                    <label for="product-image">Имя файла картинки (из папки images/)</label>
+                    <input type="text" id="product-image" placeholder="Например: 7.png">
                 </div>
                 <button type="submit" class="admin-save-btn">Сохранить товар в каталог</button>
             </form>
@@ -49,4 +55,5 @@
     <script src="scripts/admin.js"></script>
     <script src="scripts/script.js"></script>
 </body>
+
 </html>
