@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +9,12 @@
     <link rel="stylesheet" href="style/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="Логотип Мясокомбината Абаканский">
+                    <img src="images/logo.png">
                 </a>
             </div>
             <nav class="main-navigation">
@@ -38,16 +36,15 @@
     </header>
     <section class="section_slider">
         <div class="slider_container">
-            <button id="slider-btn_prev">
-                << /button>
-                    <img id="slider-img" src="" alt="Слайдер с продукцией">
-                    <button id="slider-btn_next">></button>
+            <button id="slider-btn_prev"><</button>
+            <img id="slider-img" src="" alt="">
+            <button id="slider-btn_next">></button>
         </div>
     </section>
     <!-- СЕКЦИЯ ПОПУЛЯРНАЯ ПРОДУКЦИЯ -->
     <section class="popular">
         <div class="popular-products">
-            <h1 class="section-title">Популярная продукция</h1>
+            <h2 class="section-title">Популярная продукция</h2>
             <main class="products-grid">
                 <article class="product-card" data-id="1" data-category="conserves" data-price="180"
                     data-instock="true">
@@ -55,7 +52,7 @@
                         <img src="images/2.png" alt="Тушенка">
                     </div>
                     <div class="product-information">
-                        <h2 class="product-name">Тушенка Говяжья</h2>
+                        <h3 class="product-name">Тушенка Говяжья</h3>
                         <p class="product-description">Нежный вкус, без сои и ГМО</p>
                         <div class="price-information">
                             <span class="price">180 ₽</span>
@@ -69,7 +66,7 @@
                         <img src="images/3.png" alt="Колбаса">
                     </div>
                     <div class="product-information">
-                        <h2 class="product-name">Колбаса «Докторская»</h2>
+                        <h3 class="product-name">Колбаса «Докторская»</h3>
                         <p class="product-description">Родной состав, без добавок</p>
                         <div class="price-information">
                             <span class="price">320 ₽</span>
@@ -83,7 +80,7 @@
                         <img src="images/4.png" alt="Паштет">
                     </div>
                     <div class="product-information">
-                        <h2 class="product-name">Паштет Нежный (140г)</h2>
+                        <h3 class="product-name">Паштет Нежный (140г)</h3>
                         <p class="product-description">Мясной вкус, без сои и химии</p>
                         <div class="price-information">
                             <span class="price">85 ₽</span>
@@ -97,7 +94,7 @@
                         <img src="images/5.png" alt="Сосиски">
                     </div>
                     <div class="product-information">
-                        <h2 class="product-name">Сосиски «С молочком»</h2>
+                        <h3 class="product-name">Сосиски «С молочком»</h3>
                         <p class="product-description">Натуральный продукт без ГМО</p>
                         <div class="price-information">
                             <span class="price">250 ₽</span>
@@ -173,36 +170,35 @@
                 </div>
             </div>
         </section>
-    </section> <!-- Закрытие секции popular -->
 
-    <!-- ПОДВАЛ  -->
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="logo">
-                <img src="images/logo.png" alt="Логотип">
-            </div>
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h4>Навигация</h4>
-                    <ul>
-                        <li><a href="index.html">О компании</a></li>
-                        <li><a href="catalog.html">Каталог</a></li>
-                        <li><a href="#">Партнёрам</a></li>
-                        <li><a href="#">Вакансии</a></li>
-                        <li><a href="admin.html">Связаться</a></li>
-                    </ul>
+        <!-- ПОДВАЛ  -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Логотип">
                 </div>
-                <div class="footer-column">
-                    <h4>Контакты</h4>
-                    <p>+7 3913 22-26-92</p>
-                    <p>example@mail.ru</p>
-                    <p>г. Абакан ул. Пушкина 196А</p>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="index.html">О компании</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="#">Партнёрам</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="admin.html">Связаться</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Контакты</h4>
+                        <p>+7 3913 22-26-92</p>
+                        <p>example@mail.ru</p>
+                        <p>г. Абакан ул. Пушкина 196А</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="scripts/slider.js"></script>
-    <script src="scripts/script.js"></script>
+        </footer>
+        <script src="scripts/slider.js"></script>
+        <script src="scripts/script.js"></script>
 </body>
 
 </html>
