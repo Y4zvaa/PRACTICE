@@ -52,9 +52,17 @@
     display: flex;
     gap: 40px;
     align-items: flex-start;
-    background: transparent;
-    border: 1px solid var(--header);
-    padding: 30px;
+    background: var(--info);
+    padding: 40px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--header);  
+    transition: border-color 0.4s ease, box-shadow 0.4s ease; 
+}
+.about-wrapper:hover {
+    border-color: var(--header);
+    box-shadow: 0 0 80px rgba(196, 30, 36, 0.2); 
 }
 
 .about-image {
@@ -290,7 +298,7 @@
 
 /* ===== АДАПТИВКА ===== */
 
-/* Планшеты (768px - 1023px) */
+/* Планшеты */
 @media (max-width: 1023px) {
     .section-title {
         font-size: 26px;
@@ -341,7 +349,7 @@
     }
 }
 
-/* Мобильные (до 767px) */
+/* Мобильные */
 @media (max-width: 767px) {
     .section-title {
         font-size: 22px;
@@ -470,7 +478,7 @@
     }
 }
 
-/* Очень маленькие экраны (до 400px) */
+/* Очень маленькие экраны  */
 @media (max-width: 400px) {
     .feature-item {
         padding: 15px;
