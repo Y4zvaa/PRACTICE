@@ -20,8 +20,8 @@
                 </a>
             </div>
             <nav class="main-navigation">
-                <a href="index.html">О компании</a>
-                <a href="catalog.html" class="active">Каталог</a>
+                <a href="index.html" class="active">О компании</a>
+                <a href="catalog.html">Каталог</a>
                 <a href="#">Партнёрам</a>
                 <a href="#">Вакансии</a>
                 <a href="admin.html">Связаться</a>
@@ -31,22 +31,23 @@
                 <a href="cart.html" class="request-link">
                     Заявка <span id="request-counter">0</span>
                 </a>
-                <a href="reg.html" class="active">Зарегистрироваться</a>
-                <a href="auth.html" class="active">Войти</a>
+                <a href="reg.html">Зарегистрироваться</a>
+                <a href="auth.html">Войти</a>
             </div>
         </div>
     </header>
 
-    <div class="section_slider">
+    <!-- СЛАЙДЕР -->
+    <section class="section_slider">
         <div class="slider_container">
             <button id="slider-btn_prev">&lt;</button>
-            <img id="slider-img" src="images/slide1.jpg" alt="Слайдер с продукцией">
+            <img id="slider-img" src="" alt="Слайдер с продукцией">
             <button id="slider-btn_next">&gt;</button>
         </div>
-    </div>
+    </section>
 
     <!-- СЕКЦИЯ ПОПУЛЯРНАЯ ПРОДУКЦИЯ -->
-    <div class="popular">
+    <section class="popular">
         <div class="popular-products">
             <h1 class="section-title">Популярная продукция</h1>
             <div class="products-grid">
@@ -64,6 +65,7 @@
                         <button class="button-info">В заявку</button>
                     </div>
                 </article>
+
                 <article class="product-card" data-id="2" data-category="sausages" data-price="320" data-instock="true">
                     <div class="product-image-container">
                         <img src="images/3.png" alt="Колбаса">
@@ -78,6 +80,7 @@
                         <button class="button-info">В заявку</button>
                     </div>
                 </article>
+
                 <article class="product-card" data-id="3" data-category="conserves" data-price="85" data-instock="true">
                     <div class="product-image-container">
                         <img src="images/4.png" alt="Паштет">
@@ -92,6 +95,7 @@
                         <button class="button-info">В заявку</button>
                     </div>
                 </article>
+
                 <article class="product-card" data-id="4" data-category="sausages" data-price="250" data-instock="true">
                     <div class="product-image-container">
                         <img src="images/5.png" alt="Сосиски">
@@ -108,9 +112,9 @@
                 </article>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- СЕКЦИЯ О КОМПАНИИ -->
+    <!-- СЕКЦИЯ О КОМПАНИИ С ИНФОГРАФИКОЙ -->
     <section class="about-company">
         <div class="about-wrapper">
             <div class="about-image">
@@ -119,11 +123,28 @@
             <div class="about-content">
                 <h2 class="about-title">О компании</h2>
                 <p>
-                    ООО «Мясоконсервный комбинат "Абаканский"» — это крупное <br>
-                    современное пищевое предприятие, расположенное в Абакане. <br>
-                    Оно специализируется на переработке сельскохозяйственной <br>
-                    продукции и производстве мясных продуктов.<br>
+                    ООО «Мясоконсервный комбинат "Абаканский"» — это крупное<br>
+                    современное пищевое предприятие, расположенное в Абакане.<br>
+                    Оно специализируется на переработке сельскохозяйственной<br>
+                    продукции и производстве мясных продуктов.
                 </p>
+
+                <!-- ИНФОГРАФИКА -->
+                <div class="about-stats-mini">
+                    <div class="stat-mini">
+                        <span class="stat-mini-number">93</span>
+                        <span class="stat-mini-label">года истории</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="stat-mini-number">130+</span>
+                        <span class="stat-mini-label">видов продукции</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="stat-mini-number">100%</span>
+                        <span class="stat-mini-label">натуральное мясо</span>
+                    </div>
+                </div>
+
                 <a href="#" class="button-info">Подробнее</a>
             </div>
         </div>
@@ -132,45 +153,44 @@
     <!-- СЕКЦИЯ ПОЧЕМУ ВЫБИРАЮТ НАС -->
     <section class="why-us">
         <h2 class="section-title">Почему выбирают нас</h2>
-
         <div class="features-grid">
             <div class="feature-item">
                 <div class="feature-icon">
-                    <img src="images/ok.png" alt="Качество">
+                    <img src="images/factory.png" alt="История" data-icon="factory">
                 </div>
                 <div class="feature-text">
-                    <h3>Качество</h3>
-                    <p>Одно из главных предприятий в Хакасии по производству мясной продукции</p>
+                    <h3>93 года истории</h3>
+                    <p>Основан в 1932 году — производим мясо более 9 десятилетий</p>
                 </div>
             </div>
 
             <div class="feature-item">
                 <div class="feature-icon">
-                    <img src="images/ok.png" alt="Качество">
+                    <img src="images/medal.png" alt="Продукты" data-icon="medal">
                 </div>
                 <div class="feature-text">
-                    <h3>Качество</h3>
-                    <p>Одно из главных предприятий в Хакасии по производству мясной продукции</p>
+                    <h3>Более 130 продуктов</h3>
+                    <p>Консервы, колбасы, полуфабрикаты и деликатесы</p>
                 </div>
             </div>
 
             <div class="feature-item">
                 <div class="feature-icon">
-                    <img src="images/ok.png" alt="Качество">
+                    <img src="images/nat.png" alt="Надёжность" data-icon="nat">
                 </div>
                 <div class="feature-text">
-                    <h3>Качество</h3>
-                    <p>Одно из главных предприятий в Хакасии по производству мясной продукции</p>
+                    <h3>Государственный заказчик</h3>
+                    <p>Поставки в госрезервы и бюджетные организации</p>
                 </div>
             </div>
 
             <div class="feature-item">
                 <div class="feature-icon">
-                    <img src="images/ok.png" alt="Качество">
+                    <img src="images/ok.png" alt="Качество" data-icon="ok">
                 </div>
                 <div class="feature-text">
-                    <h3>Качество</h3>
-                    <p>Одно из главных предприятий в Хакасии по производству мясной продукции</p>
+                    <h3>Контроль качества</h3>
+                    <p>Лаборатория и проверка на всех этапах производства</p>
                 </div>
             </div>
         </div>
@@ -202,6 +222,7 @@
             </div>
         </div>
     </footer>
+
     <script src="scripts/slider.js"></script>
     <script src="scripts/script.js"></script>
 </body>

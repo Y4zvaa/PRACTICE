@@ -162,6 +162,8 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    gap: 10px
+    
 }
 
 .filter-group-prise {
@@ -176,6 +178,7 @@ body {
     height: 18px;
     accent-color: var(--header);
     cursor: pointer;
+    
 }
 
 .filter-group span {

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function applyFilters() {
-        let productCards = getProductCards(); // получаем свежий список
+        let productCards = getProductCards();
         let minPrice = priceMinInput.value === '' ? 0 : Number(priceMinInput.value);
         let maxPrice = priceMaxInput.value === '' ? 10000 : Number(priceMaxInput.value);
         let onlyInStock = inStockCheckbox.checked;
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
             newCard.dataset.category = prod.category;
             newCard.dataset.price = prod.price;
             newCard.dataset.instock = prod.instock;
-            newCard.innerHTML = 
+            newCard.innerHTML =
                 '<div class="product-image-container">' +
                 '<img src="images/' + prod.image + '" alt="' + prod.name + '">' +
                 '</div>' +
@@ -140,10 +140,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     updateRequestCounter();
-    applyFilters(); 
+    applyFilters();
 });
+
 // ========== СМЕНА ТЕМ ==========
-(function() {
+(function () {
     // Объект с темами
     const themes = {
         light: {
@@ -160,7 +161,6 @@ document.addEventListener('DOMContentLoaded', function () {
             '--price': '#C41E24',
             '--thead': '#d0d0d0',
             '--focus': '#C41E24',
-            
         },
         dark: {
             '--main': '#3f090c',
@@ -176,7 +176,6 @@ document.addEventListener('DOMContentLoaded', function () {
             '--price': '#e7e7e7',
             '--thead': '#350e11',
             '--focus': '#754e50',
-
         }
     };
 
@@ -209,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Функция смены иконок
     function changeIcons(themeName) {
         const isDark = themeName === 'dark';
-        
+
         // Меняем иконки настроек темы (dark.png / light.png)
         const themeSettingIcons = document.querySelectorAll('.settingsList_Item img');
         themeSettingIcons.forEach(icon => {
@@ -224,12 +223,15 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Меняем иконки преимуществ (ok.png / okW.png)
-        const okIcons = document.querySelectorAll('.feature-icon img');
-        okIcons.forEach(icon => {
-            icon.src = isDark ? 'images/okW.png' : 'images/ok.png';
+        // Меняем иконки преимуществ по data-icon
+        const featureIcons = document.querySelectorAll('.feature-icon img');
+        featureIcons.forEach(icon => {
+            const iconName = icon.getAttribute('data-icon');
+            if (iconName) {
+                icon.src = isDark ? `images/${iconName}W.png` : `images/${iconName}.png`;
+            }
         });
-    }
+    } // <-- ЭТА СКОБКА БЫЛА ПРОПУЩЕНА!
 
     // Загрузка сохранённой темы
     function loadSavedTheme() {
